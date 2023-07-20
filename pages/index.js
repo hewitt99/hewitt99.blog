@@ -6,14 +6,13 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
+        <title>Hewitt's blog</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-          <p>Read <Link href="/posts/first-post">this page!</Link></p>
+            Hewitt's blog
         </h1>
 
         <p className={styles.description}>
@@ -21,10 +20,15 @@ export default function Home() {
         </p>
 
         <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
+          <Link href={'/posts/first-post'} className={styles.card}>
+            <h3>First Page &rarr;</h3>
+            <p>A playGround for Hewitt to meet somethine fun.</p>
+          </Link>
+
+          <Link href={'/posts/markdown'} className={styles.card}>
+            <h3>MarkDown &rarr;</h3>
+            <p>A playGround for Hewitt to meet somethine fun.</p>
+          </Link>
 
           <a href="https://nextjs.org/learn" className={styles.card}>
             <h3>Learn &rarr;</h3>
