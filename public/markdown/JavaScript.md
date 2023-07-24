@@ -51,3 +51,24 @@ Note that browsers don’t understand JSX out of the box, so you’ll need a Jav
 ### 解析string的function
 
 #### new Function和eval
+
+
+
+### 事件
+
+事件捕获，window- document-body-div
+
+事件到达两次
+
+事件冒泡，div-body- document-window
+
+事件监听：
+
+​	冒泡过程中`addEventListener(eventName, fn, [default: false])`
+
+​	捕获过程中`addEventListener(eventName, fn,  true)`
+
+##### 为什么会在前端加入冒泡事件这种机制,是出于什么问题才考虑加入这样一种机制的
+
+1. 加入冒泡机制是因为存在这个现象 子元素存在于父级元素，你点击子元素也是相当于点击了父元素，然后冒泡机制可用于事件委托，优化性能，比如长列表绑定事件
+2. 如上楼所说的长列表绑定，笨的做法：每个li上绑定事件，li触发事件，如果1kw条数据，这种做法肯定是不科学的。所以，优化性能的时候，将事件绑定在ul上，加入冒泡机制，代码量变少、性能又好，何乐而不为？

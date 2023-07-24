@@ -14,8 +14,8 @@ export default function Home() {
         <h1 className={styles.title}>Hewitt's blog</h1>
 
         <p className={styles.description}>
-          This is a place where Hewitt embarks on a journey of learning,
-          recording, and personal growth.
+          This is a place where Hewitt embarks on a journey of learning and
+          recording.
         </p>
 
         <div className={styles.grid}>
@@ -26,6 +26,16 @@ export default function Home() {
 
           <Link href={"/posts/markdown"} className={styles.card}>
             <h3>MarkDown &rarr;</h3>
+            <p>A playGround for Hewitt to meet somethine fun.</p>
+          </Link>
+
+          <Link href={"/posts/regexp"} className={styles.card}>
+            <h3>Regexp &rarr;</h3>
+            <p>A playGround for Hewitt to meet somethine fun.</p>
+          </Link>
+
+          <Link href={"/posts/javaScript"} className={styles.card}>
+            <h3>JavaScript &rarr;</h3>
             <p>A playGround for Hewitt to meet somethine fun.</p>
           </Link>
         </div>

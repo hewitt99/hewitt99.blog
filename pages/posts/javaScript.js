@@ -1,16 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import ReactMarkdown from 'react-markdown';
 
-const MarkDown = () => {
+const JavaScript = () => {
 
   const [markdownContent, setMarkdownContent] = useState('');
 
   useEffect(() => {
     const getMarkDownContent = async () => {
       // todo 这样读取文件内容的
-      const res = await fetch('/markdown/Git.md')
+      const res = await fetch('/markdown/javaScript.md')
       const content = await res.text();
-      console.log('res: ', res, content);
       setMarkdownContent(content)
     }
     getMarkDownContent()
@@ -26,4 +25,4 @@ const MarkDown = () => {
   )
 }
 
-export default MarkDown
+export default JavaScript
