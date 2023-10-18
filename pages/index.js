@@ -38,6 +38,17 @@ export default function Home() {
             <h3>JavaScript &rarr;</h3>
             <p>A playGround for Hewitt to meet somethine fun.</p>
           </Link>
+
+          {/* 拖拽库 */}
+          <Link href={"/posts/reactBeautifulDnD"} className={styles.card}>
+            <h3>React-Beautiful-DnD &rarr;</h3>
+            <p>A playGround for Hewitt to meet somethine fun.</p>
+          </Link>
+
+          <Link href={"/posts/javaScript"} className={styles.card}>
+            <h3>JavaScript &rarr;</h3>
+            <p>A playGround for Hewitt to meet somethine fun.</p>
+          </Link>
         </div>
       </main>
 
